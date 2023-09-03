@@ -1,9 +1,9 @@
 :root {
   --cinza: #aaa;
-  --vermelha: #e93d50;
-  --vermelha-escura: #af303f;
+  --preto: black;
+  --preto-escura: #af303f;
   --branca: #fff;
-  --luz: rgb(229, 255, 0);
+  --luz: rgb(85, 185, 232);
 }
 
 body {
@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+  font-family: monospace;
   min-height: 100vh;
 }
 
@@ -20,6 +20,12 @@ h1 {
   color: var(--branca);
   margin-bottom: 20px;
   font-size: 2rem;
+}
+
+p{
+  color: var(--branca);
+  margin-bottom: 20px;
+
 }
 
 .teclado {
@@ -36,7 +42,7 @@ h1 {
   background-color: var(--branca);
   border-radius: 30px;
   box-shadow: 3px 3px 0 var(--cinza);
-  color: var(--vermelha);
+  color: black;
   cursor: pointer;
   height: 120px;
   font-size: 1.75em;
@@ -48,9 +54,9 @@ h1 {
 
 .tecla.ativa,
 .tecla:active {
-  background-color: var(--vermelha);
-  border: 4px solid  var(--vermelha);
-  box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
+  background-color: var(--preto);
+  border: 4px solid  var(--preto);
+  box-shadow: 3px 3px 0 black inset;
   color: var(--branca);
   outline: none;
 }
@@ -63,5 +69,5 @@ h1 {
 
 .tecla.active:focus,
 .tecla:active:focus {
-  box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+  box-shadow: 3px 3px 0 black inset, 1px 1px 10px var(--luz);
 }
